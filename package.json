@@ -17,6 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.14.0",
+    "lodash": "^4.16.1",
+    "marked": "^0.3.6",
     "sanitize-html": "^1.13.0",
     "striptags": "^2.1.1"
   },

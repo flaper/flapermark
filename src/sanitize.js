@@ -29,7 +29,7 @@ export class Sanitize {
 
   static fakerIncreaseAlphaLength(str, length) {
     let repeat = Math.ceil(length / Sanitize.symbolsNumber(str));
-    //to prevent right strings be completed removed by e.g. unclosed <script> tag
+    // to prevent correct strings be completed removed by e.g. unclosed <script> tag
     let s = Sanitize.html(str);
     let result = s;
     for (let i = 1; i < repeat; i++) result += '\n' + s;
