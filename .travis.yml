@@ -1,0 +1,4 @@
+language: node_js
+nonde_js:
+  - "5.1"
+  - "6.6"

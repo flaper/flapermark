@@ -1,0 +1,28 @@
+{
+  "name": "@flaper/markdown",
+  "version": "1.0.0",
+  "description": "Markdown for flaper",
+  "main": "dist/index.js",
+  "scripts": {
+    "pretest": "jshint .",
+    "test": "mocha",
+    "compile": "babel-cli src --out-dir dist",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flaper/markdown.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.14.0",
+    "sanitize-html": "^1.13.0",
+    "striptags": "^2.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "jshint": "^2.9.3",
+    "mocha": "^3.0.2"
+  }
+}
