@@ -1,4 +1,4 @@
-import {Sanitize} from './src/main'
+import {Sanitize} from '../src/sanitize'
 let should = require('chai').should();
 
 describe('FlaperMark.', () => {
