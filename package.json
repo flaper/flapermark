@@ -6,8 +6,8 @@
   "scripts": {
     "pretest": "jshint .",
     "test": "mocha",
-    "compile": "babel-cli src --out-dir dist",
-    "prepublish": "npm run compile"
+    "compile": "babel src --out-dir dist",
+    "prepublish2": "npm run compile"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-core": "^6.14.0",
     "lodash": "^4.16.1",
     "marked": "^0.3.6",
     "sanitize-html": "^1.13.0",
@@ -24,6 +23,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
     "babel-plugin-array-includes": "^2.0.3",
     "babel-plugin-transform-es2015-destructuring": "^6.1.18",
     "babel-plugin-transform-es2015-literals": "^6.1.18",
