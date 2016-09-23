@@ -1,5 +1,5 @@
 let should = require('chai').should();
-import {TEST_IMAGE_ID, FlaperImage} from '../src/markdown/FlaperImage.js';
+import {TEST_IMAGE_ID, FlaperImage} from '@flaper/consts';
 import {FlaperMark} from '../src/index.js';
 import {MD_IMAGES_GROUP_CLASS} from '../src/markdown/htmlRender.js';
 import {cutInlineHtml} from '../src/markdown/shortInline.js';

@@ -1,13 +1,13 @@
 delete require.cache[require.resolve('marked')];//to prevent get options for marked from another library
 import marked from 'marked';
-import {FlaperImage, IMAGE_FORMAT} from './FlaperImage.js';
+import {FlaperImage, IMAGE_FORMAT} from '@flaper/consts';
 import {linkRender} from './link.js';
 
-//to remove auto ids for headers
 let renderer = new marked.Renderer();
 
 export const MD_IMAGES_GROUP_CLASS = "md-images-group";
 
+// to remove auto ids for headers
 renderer.heading = function (text, level) {
   return `<h${level}>${text}</h${level}>`;
 };
@@ -26,15 +26,15 @@ marked.setOptions({
   breaks: true
 });
 
-//images group should be in separate paragraph
+// images group should be in separate paragraph
 function imagesToSeparateBlock(markdown) {
-  //select groups of ![title](src)
+  // select groups of ![title](src)
   let imgGroupRegex = /((?:!\[[^\[\]]*]\([^\(\)]*\)\s*)+)/g;
-  //let result = markdown.match(imgGroupRegex);
+  // let result = markdown.match(imgGroupRegex);
   return markdown.replace(imgGroupRegex, '\n\n$1\n\n');
 }
 function responsiveImages(html) {
-  //future notes, we can remove <p></p> wrapper from images in future
+  // future notes, we can remove <p></p> wrapper from images in future
   /**
    * capture group from 1 to + images
    *  ?: means not-capturing group
