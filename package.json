@@ -1,13 +1,13 @@
 {
   "name": "@flaper/markdown",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Markdown for flaper",
   "main": "dist/index.js",
   "scripts": {
-    "pretest": "jshint src/.",
+    "pretest": "jshint .",
     "test": "mocha",
     "compile": "babel src --out-dir dist",
-    "prepublish2": "npm run compile"
+    "prepublish": "npm run compile"
   },
   "repository": {
     "type": "git",
