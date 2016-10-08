@@ -1,6 +1,8 @@
 {
   "plugins": [
-  "array-includes", "transform-es2015-destructuring",
+  "array-includes",
+  "check-es2015-constants", "transform-es2015-destructuring", "transform-es2015-classes",
+  "transform-es2015-for-of",
   "transform-es2015-literals", "transform-es2015-modules-commonjs", "transform-es2015-object-super",
   "transform-es2015-parameters"
   ]
