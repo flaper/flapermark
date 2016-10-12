@@ -9,6 +9,7 @@
     "compile": "babel src --out-dir dist",
     "prepublish": "npm run compile"
   },
+  "typings" : "./markdown.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flaper/markdown.git"
