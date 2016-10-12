@@ -1,6 +1,6 @@
 {
   "name": "@flaper/markdown",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Markdown for flaper",
   "main": "dist/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "compile": "babel src --out-dir dist",
     "prepublish": "npm run compile"
   },
-  "typings" : "./markdown.d.ts",
+  "typings": "./markdown.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flaper/markdown.git"
